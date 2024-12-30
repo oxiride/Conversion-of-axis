@@ -1,0 +1,1 @@
+This is a simple MATLAB code for converrting between axis used in space dynamic and control, the code asks for the input required and the output requred. however it needs to follow specfic format for the input to ensure the code will work
