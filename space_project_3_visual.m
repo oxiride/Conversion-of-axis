@@ -218,7 +218,7 @@ switch rotation
 end
 seq=seq';
 end
-%100059617
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %SPECAIL CASE FOR WHEN SWITCHING BETWEEN EULER AND OTHER TYPES AND VISE
 %VERSA
@@ -240,7 +240,6 @@ while rotation>6 || rotation<1
 end
 end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%100059617
 % HERE WE DO THE CONVERSION BETWEEN DCM AND QUATERNIONS
 function [quat,q1,q2,q3,q4]=dcm2quat(seq);
     a11=seq(1,1);
@@ -259,7 +258,7 @@ q1=(a23-a32)*(1/(4*q4));
 
 quat=[-q1 -q2 -q3 q4];
 end
-%100059617
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %HERE WE CHANGE FROM QUATERMIONS TO PRINCIPLE AXIS
 function [principal_line] = quaternion_to_principal(quat)
